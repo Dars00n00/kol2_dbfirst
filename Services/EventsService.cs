@@ -95,8 +95,7 @@ public class EventsService : IEventsService
                     .ToList();
                 if (missingUserIds.Any())
                 {
-                    throw new MissingTagException(
-                        $"missing users from request: {{ids:{string.Join(", ", missingUserIds)}}} in database");
+                    throw new MissingUserException($"missing users from request: {{ids:{string.Join(", ", missingUserIds)}}} in database");
                 }
             }
 

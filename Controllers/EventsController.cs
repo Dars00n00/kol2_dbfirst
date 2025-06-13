@@ -50,6 +50,14 @@ public class EventsController : ControllerBase
         {
             return NotFound(ex.Message);
         }
+        catch (MissingTagException ex)
+        {
+            return BadRequest(ex.Message);
+        }
+        catch (MissingUserException ex)
+        {
+            return BadRequest(ex.Message);
+        }
         catch (Exception ex)
         {
             return StatusCode(500, ex.Message);

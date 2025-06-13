@@ -8,7 +8,7 @@ namespace kol2.Controllers;
 
 
 [ApiController]
-[Route("api/[controller]/details")]
+[Route("api/[controller]")]
 public class EventsController : ControllerBase
 {
     private readonly IEventsService _eventsService;

@@ -1,15 +1,3 @@
-// w nuget biblioteki:
-// Microsoft.Data.SqlClient
-// Swashbuckle.AspNetCore.SwaggerGen
-// Swashbuckle.AspNetCore.SwaggerUI
-// Microsoft.EntityFrameworkCore.SqlServer
-// Microsoft.EntityFrameworkCore.Design
-
-
-// dotnet tool install --global dotnet-ef
-// dotnet ef dbcontext scaffold Name=ConnectionStrings:Default --context-dir Data --output-dir Models Microsoft.EntityFrameworkCore.SqlServer -t k2pr_Event -t k2pr_EventParticipant -t k2pr_EventTag -t k2pr_Tag -t k2pr_User
-
-
 using kol2.Data;
 using kol2.Services;
 using Microsoft.EntityFrameworkCore;
